@@ -56,47 +56,91 @@ switch(letra)
       indice.write(180); // Cerrado
       medio.write(180); // Cerrado 
       anular.write(0); // Cerrado
-      menique.write(45); 
-      antebrazo.write(0); // mkdlasmdlksad
+      menique.write(45); // Cerrado
+      antebrazo.write(0); // Quieto
       delay(4000); //
       break;
+
+      case 'b':
+      case 'B': 
+      //Letra B
+      Serial.println(letra);
+      pulgarmini.write(90); // Cerrado
+      pulgar.write(90); // Cerrado
+      indice.write(0); // Abierto
+      medio.write(0); // Abierto
+      anular.write(180); // Abierto
+      menique.write(180); // Abierto
+      antebrazo.write(0); // Quieto
+      delay(4000);
+      break;
+
+      case 'c':
+      case 'C':
+      //Letra C
+      Serial.println(letra);
+      pulgarmini.write(90); // Dentro
+      pulgar.write(100); // Poco flexionado
+      indice.write(130); // Poco flexionado
+      medio.write(100); // Poco flexionado
+      anular.write(100); // Poco flexionado
+      menique.write(90); // Poco flexionado
+      antebrazo.write(90); // Poco rotado
+      delay(4000);
+      break;  
+
+      case 'd':
+      case 'D':
+      //Letra D
+      Serial.println(letra);
+      anular.write(90); // Cerrado
+      menique.write(60); // Cerrado      
+      medio.write(100); // Cerrado 
+      delay(500); // Espera     
+      pulgarmini.write(90); // Cerrado
+      delay(500);
+      pulgar.write(90); // Cerrado
+      indice.write(0); // Abierto
+      antebrazo.write(90); // Rotado
+      delay(4000);
+      break;              
 
       case 'e':
       case 'E':
       Serial.println(letra);
-      pulgarmini.write(90); // Abierto
-      pulgar.write(90); // Abierto
+      pulgarmini.write(90); // Cerrado
+      pulgar.write(90); // Cerado
       indice.write(180); // Cerrado
       medio.write(180); // Cerrado 
       anular.write(0); // Cerrado
-      menique.write(45); 
-      antebrazo.write(0); // mkdlasmdlksad
+      menique.write(45); // Cerrado 
+      antebrazo.write(0); // Quieto
       delay(4000); //
       break;
 
       case 'i':
       case 'I':
       Serial.println("i");
-      pulgarmini.write(90); // Abierto
-      pulgar.write(90); // Abierto
+      pulgarmini.write(90); // Cerrado
+      pulgar.write(90); // Cerrado
       indice.write(180); // Cerrado
       medio.write(180); // Cerrado 
       anular.write(0); // Cerrado
-      menique.write(180); 
-      antebrazo.write(0); // mkdlasmdlksad
+      menique.write(180); // Abierto
+      antebrazo.write(0); // Quieto
       delay(4000); //
       break;
 
       case 'o':
       case 'O':
       Serial.println("o");
-      pulgarmini.write(90); // Abierto
-      pulgar.write(90); // Abierto
+      pulgarmini.write(90); // Cerrado
+      pulgar.write(90); // Cerrado
       indice.write(180); // Cerrado
       medio.write(180); // Cerrado 
       anular.write(0); // Cerrado
-      menique.write(45); 
-      antebrazo.write(90); // mkdlasmdlksad
+      menique.write(45); // Cerrado
+      antebrazo.write(90); // Rotando
       delay(4000); //  
       break;
 
@@ -105,13 +149,13 @@ switch(letra)
 
       // LETRA U
       Serial.println(letra);
-      pulgarmini.write(90); // Abierto
-      pulgar.write(90); // Abierto
-      indice.write(0); // Cerrado
-      medio.write(0); // Cerrado 
+      pulgarmini.write(90); // Cerrado
+      pulgar.write(90); // Cerrado
+      indice.write(0); // Abierto
+      medio.write(0); // Abierto 
       anular.write(0); // Cerrado
-      menique.write(45); 
-      antebrazo.write(0); // mkdlasmdlksad
+      menique.write(45); // Cerrado 
+      antebrazo.write(0); // Quieto
       delay(4000); //
       
       default:
@@ -122,8 +166,8 @@ switch(letra)
       indice.write(0); // Abierto
       medio.write(0); // Abierto
       anular.write(180); // Abierto
-      menique.write(180);
-      antebrazo.write(0);
+      menique.write(180); // Abierto
+      antebrazo.write(0); // Quieto
       delay(4000);
       break;
     }
