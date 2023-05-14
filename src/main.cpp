@@ -5,6 +5,7 @@
 #include <Servo.h>
 int posicion;
 
+// Inicialización de los servomotores
 Servo pulgarmini; // PORTD0
 Servo pulgar; // PORTD1
 Servo indice; // PORTD2
