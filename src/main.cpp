@@ -5,8 +5,6 @@
 #include <Servo.h>
 int posicion;
 
-// mangos.
-
 Servo pulgarmini; // PORTD0
 Servo pulgar; // PORTD1
 Servo indice; // PORTD2
